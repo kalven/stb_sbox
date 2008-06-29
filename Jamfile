@@ -1,0 +1,3 @@
+lib stb_sbox : sboxread.c sboxwrit.c sboxkit.c : <link>static <define>_CRT_SECURE_NO_WARNINGS : : <include>. ;
+
+exe box : box.c stb_sbox : <define>PRINT_ERRORS <define>EXIT_ON_ERROR <define>_CRT_SECURE_NO_WARNINGS ;
